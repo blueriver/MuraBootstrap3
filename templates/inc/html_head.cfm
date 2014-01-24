@@ -11,14 +11,17 @@
 	<meta name="generator" content="Mura CMS #$.globalConfig('version')#">
 
 	<title>#HTMLEditFormat($.content('HTMLTitle'))# - #HTMLEditFormat($.siteConfig('site'))#</title>
-
+	<!--- Mura CMS Base Styles--->
+	<link rel="stylesheet" href="#$.siteConfig('assetPath')#/css/mura.6.1.1.min.css">
+	<!--- Optional: Mura CMS Skin Styles. Duplicate to your theme to customize, changing 'assetPath' to 'themeAssetPath' below. Don't forget to move, remove or replace sprite.png. --->
+	<link rel="stylesheet" href="#$.siteConfig('assetPath')#/css/mura.6.1.1.skin.css">
+	
 	<!--- Bootstrap core CSS --->
 	<link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/assets/bootstrap/css/bootstrap.min.css">
-	<!--- Bootstrap theme compiled below --->
+	
 	<!--- Font Awesome --->
 	<link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/assets/font-awesome/css/font-awesome.css">
-	<!--- Mura CMS --->
-	<link rel="stylesheet" href="#$.siteConfig('assetPath')#/css/mura.6.1.min.css">
+	
 
 	<!--- CfStatic THEME CSS --->
 	<cf_CacheOMatic key="globalheadercss">
