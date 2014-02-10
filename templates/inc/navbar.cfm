@@ -25,7 +25,6 @@
 								, displayHome='always'
 								, closeFolders=false 
 								, showCurrentChildrenOnly=false
-
 								, liHasKidsClass='dropdown'
 								, liHasKidsAttributes=''
 								, liCurrentClass=''
