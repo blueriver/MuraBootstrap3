@@ -81,6 +81,9 @@
 		this.subHead3 = "h4";
 		this.subHead4 = "h5";
 
+		// preloader markup for async objects
+		this.preloaderMarkup='<i class="fa fa-refresh fa-spin"></i>';
+
 		// nav and list item vars
 		this.navWrapperClass = this.generalWrapperClass;
 		this.liHasKidsClass = "";
@@ -95,6 +98,9 @@
 		this.ulNestedClass = "nav nav-list";
 		this.ulNestedCustomString = "";
 		this.liNestedClass = "";
+
+		//With asyncObjects set to true some display objects are loaded via ajax
+		//this.asyncObjects = true;
 
 		// pagination vars
 		this.ulPaginationClass = "pagination";
@@ -221,6 +227,7 @@
 			rating={tag="dd",showLabel=true,labelDelim=":",rbkey="list.rating"},
 			"default"={tag="dd"}
 		};
+
 		this.contentListWrapperDivClass="";
 		this.contentListItemImageLinkClass="";
 		
