@@ -23,7 +23,7 @@
 								, id='navPrimary'
 								, class='nav navbar-nav'
 								, displayHome='always'
-								, closeFolders=true 
+								, closeFolders=false 
 								, showCurrentChildrenOnly=false
 								, liHasKidsClass='dropdown'
 								, liHasKidsAttributes=''
