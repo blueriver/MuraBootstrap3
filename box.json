@@ -12,7 +12,7 @@
         "type":"Git",
         "URL":"https://github.com/blueriver/MuraBootstrap3"
     },
-    "bugs":"",
+    "bugs":"https://github.com/blueriver/MuraBootstrap3/issues",
     "slug":"MuraBootstrap3",
     "shortDescription":"Mura Bootstrap3 Theme",
     "description":"",
