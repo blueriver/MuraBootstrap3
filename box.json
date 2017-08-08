@@ -1,0 +1,36 @@
+{
+    "name":"Mura Bootstrap 3 Theme",
+    "version":"7.1.0",
+    "author":"Blue River",
+    "location":"",
+    "directory":"themes",
+    "createPackageDirectory":true,
+    "packageDirectory":"",
+    "homepage":"http://www.getmura.com/",
+    "documentation":"http://docs.getmura.com/",
+    "repository":{
+        "type":"Git",
+        "URL":"https://github.com/blueriver/MuraCMS"
+    },
+    "bugs":"",
+    "slug":"MuraBootstrap3",
+    "shortDescription":"Mura Bootstrap3 Theme",
+    "description":"",
+    "instructions":"",
+    "changelog":"",
+    "type":"theme",
+    "keywords":[
+        "mura",
+        "cms",
+        "cfml",
+        "content management system",
+        "content",
+        "management",
+        "system"
+    ],
+    "private":false,
+    "contributors":[
+        "Steve Withington (stevewithington@blueriver.com)",
+        "Matt Levine (matt.levine@blueriver.com)"
+    ],
+}
