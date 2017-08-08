@@ -71,6 +71,7 @@
 		// GENERAL
 		this.layoutmanager=true;
 		this.legacyobjects=false;
+		this.validateCSRFTokens=true; //This will eventually default to true
 		this.jsLib = "jquery";
 		this.jsLibLoaded = true;
 		this.suppressWhitespace = false;
@@ -251,6 +252,8 @@
 		this.editProfileSubmitButtonWrapperClass="col-lg-offset-3 col-lg-9";
 		this.editProfileSubmitButtonClass="btn btn-primary";
 		this.editProfileSuccessMessageClass=this.alertSuccessClass;
+		this.editProfileErrorMessageClass=this.alertDangerClass;
+		this.editProfileInfoMessageClass=this.alertDangerClass;
 
 		// dsp_email_dropdown.cfm
 		this.emailDropdownSelectClass="dropdown";
