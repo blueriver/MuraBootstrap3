@@ -10,7 +10,7 @@
     "documentation":"http://docs.getmura.com/",
     "repository":{
         "type":"Git",
-        "URL":"https://github.com/blueriver/MuraCMS"
+        "URL":"https://github.com/blueriver/MuraBootstrap3"
     },
     "bugs":"",
     "slug":"MuraBootstrap3",
@@ -28,9 +28,5 @@
         "management",
         "system"
     ],
-    "private":false,
-    "contributors":[
-        "Steve Withington (stevewithington@blueriver.com)",
-        "Matt Levine (matt.levine@blueriver.com)"
-    ],
+    "private":false
 }
