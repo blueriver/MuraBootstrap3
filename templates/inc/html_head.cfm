@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
 	<meta name="description" content="#esapiEncode('html_attr', m.content('metaDesc'))#">
 	<meta name="keywords" content="#esapiEncode('html_attr', m.content('metaKeywords'))#">
 	<cfif len(m.content('credits'))><meta name="author" content="#esapiEncode('html_attr', m.content('credits'))#"></cfif>
@@ -15,6 +16,19 @@
 
 	<!--- Mura CSS Styles--->
 	#m.outputMuraCSS(version="7.1", includeskin=true)#
+=======
+	<meta name="description" content="#esapiEncode('html_attr', $.content('metaDesc'))#">
+	<meta name="keywords" content="#esapiEncode('html_attr', $.content('metaKeywords'))#">
+	<cfif len($.content('credits'))><meta name="author" content="#esapiEncode('html_attr', $.content('credits'))#"></cfif>
+	<cfif YesNoFormat($.content('searchExclude'))><meta name="robots" content="noindex"></cfif>
+	<meta name="generator" content="Mura CMS #$.globalConfig('version')#">
+
+	<title>#esapiEncode('html', $.content('HTMLTitle'))# - #esapiEncode('html', $.siteConfig('site'))#</title>
+	<!--- Mura CMS Base Styles--->
+	<link rel="stylesheet" href="#$.globalConfig('corePath')#/modules/v1/core_assets/css/mura.7.0.min.css?v=#$.siteConfig('version')#">
+	<!--- Optional: Mura CMS Skin Styles. Duplicate to your theme to customize, changing 'assetPath' to 'themeAssetPath' below. Don't forget to move, remove or replace sprite.png. --->
+	<link rel="stylesheet" href="#$.globalConfig('corePath')#/modules/v1/core_assets/css/mura.7.0.skin.css?v=#$.siteConfig('version')#">
+>>>>>>> 710c472076341139a0ec324c61c44ab5db709235
 
 	<!--- Bootstrap core CSS --->
 	<link rel="stylesheet" href="#m.siteConfig('themeAssetPath')#/assets/bootstrap/css/bootstrap.min.css">
@@ -40,6 +54,7 @@
 	<![endif]-->
 
 	<!--- jQuery --->
+<<<<<<< HEAD
 	<script src="#m.globalConfig('corePath')#/vendor/jquery/jquery.min.js"></script>
 
 	<!--- FAV AND TOUCH ICONS --->
@@ -48,6 +63,16 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="#m.siteConfig('themeAssetPath')#/images/ico/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="#m.siteConfig('themeAssetPath')#/images/ico/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="#m.siteConfig('themeAssetPath')#/images/ico/ico/apple-touch-icon-57-precomposed.png"> --->
+=======
+	<script src="#$.globalConfig('corePath')#/vendor/jquery/jquery.min.js"></script>
+
+	<!--- FAV AND TOUCH ICONS --->
+	<link rel="shortcut icon" href="#$.globalConfig('corePath')#/modules/v1/core_assets/images/favicon.ico">
+	<!--- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#$.siteConfig('themeAssetPath')#/images/ico/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="#$.siteConfig('themeAssetPath')#/images/ico/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="#$.siteConfig('themeAssetPath')#/images/ico/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="#$.siteConfig('themeAssetPath')#/images/ico/ico/apple-touch-icon-57-precomposed.png"> --->
+>>>>>>> 710c472076341139a0ec324c61c44ab5db709235
 
 	<!--- MURA FEEDS --->
 	<cfset rs=m.getBean('feedManager').getFeeds(m.event('siteID'),'Local',true,true) />
